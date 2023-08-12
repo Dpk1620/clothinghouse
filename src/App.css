@@ -1,0 +1,105 @@
+
+/* scrollBar remove from main website */
+::-webkit-scrollbar {display:none;}
+.tabview{
+  overflow:auto;
+}
+
+/* visible scroll in auto form view */
+div:not(.tabview)::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* left semi circle around footer css */
+.SetCirleElipsisleft {
+  float: left;
+  width: 150px;
+  height: 150px;
+  shape-outside: circle(50% at 30%);
+  clip-path: circle(50% at 0%);
+  background: darkred;
+  position: relative;
+  bottom: 30px;
+}
+
+/* right side semi cirle  */
+.SetCirleElipsisright {
+  float: right;
+  width: 150px;
+  height: 150px;
+  shape-outside: circle(50% at 30%);
+  clip-path: circle(50% at 100%);
+  background: darkred;
+  position: relative;
+  top: -80px;
+}
+
+
+.GFG {
+  display: inline;
+  margin-right: "10px";
+  -moz-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -ms-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+}
+
+
+/* collage css */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 3vw);
+  grid-gap: 1rem; 
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.gallery__item--2 {
+  grid-column-start: 5;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.gallery__item--3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+.gallery__item--4 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+.gallery__item--5 {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+/* card image blur setup css */
+.cardImageblur {
+  position: relative;
+  width: 100%;
+  bottom:50px;
+  margin-top:none;
+  background-color: rgb(255 255 255 / 0.3);
+  backdrop-filter: blur(10px);
+}
+
