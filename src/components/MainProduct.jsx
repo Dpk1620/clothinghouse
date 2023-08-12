@@ -36,6 +36,12 @@ const MainProduct = ({ image, name, price, loading }) => {
         width: "12rem",
       };
       setData(value);
+    }  else if (e === "XXL") {
+      value = {
+        height: "23rem",
+        width: "15rem",
+      };
+      setData(value);
     } else {
       value = {
         height: "22rem",
@@ -49,7 +55,7 @@ const MainProduct = ({ image, name, price, loading }) => {
       {image ? (
         <>
           <div className="m-2">
-            <div style={{ height: "25rem", width: "11rem" }}>
+            <div style={{ height: "26rem", width: "11rem" }}>
               <div className="d-flex justify-content-center">
                 <img
                   src={image}
